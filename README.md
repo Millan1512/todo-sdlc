@@ -132,3 +132,18 @@ Se ha instalado manualmente la versión lodash@4.17.15 que presenta vulnerabilid
 Efecto deseado:
 
 Al ejecutar npm audit, se genera una alerta de seguridad relacionada con esa versión vulnerable, lo cual sirve para demostrar el funcionamiento de esta herramienta de análisis.
+
+
+## REPORTE DE VULNERABILIDADES 
+C:\Users\milla\Documents\1º Ingenieria Ciberseguridad\Metodologia de desarrollo seguro\todo-sdlc\app>npm audit
+# npm audit report
+
+lodash  <=4.17.20
+Severity: high
+Regular Expression Denial of Service (ReDoS) in lodash - https://github.com/advisories/GHSA-29mw-wpgm-hmr9
+Prototype Pollution in lodash - https://github.com/advisories/GHSA-p6mc-m468-83gw
+Command Injection in lodash - https://github.com/advisories/GHSA-35jh-r3h4-6jhm
+fix available via `npm audit fix`
+node_modules/lodash
+
+1 high severity vulnerability
