@@ -1,4 +1,12 @@
 Todo SDLC App
+## Miembros del grupo
+
+- Millán García
+
+Este proyecto fue realizado de forma individual.  
+Repositorio usado como base en la actividad anterior:  
+https://github.com/TU_USUARIO/NOMBRE_REPO
+
 Aplicación de ejemplo desarrollada como parte del módulo de Metodología de Desarrollo Seguro. Esta aplicación consiste en una API sencilla construida con Node.js y Express, ejecutándose dentro de contenedores Docker para facilitar el aislamiento, despliegue y seguridad.
 
 Cómo ejecutar la aplicación
