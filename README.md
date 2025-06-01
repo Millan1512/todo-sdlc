@@ -99,3 +99,36 @@ Integración continua: Aunque no se ha implementado un pipeline, el proyecto est
 
 Despliegue continuo: El uso de Docker y docker-compose permite un despliegue uniforme y seguro en cualquier entorno.
 
+
+--- Evaluar la seguridad mediante
+herramientas automáticas
+
+### Herramienta : npm audit
+¿Qué es?
+npm audit analiza las dependencias de tu proyecto Node.js en busca de vulnerabilidades conocidas.
+
+¿Por qué la usamos?
+
+Ya está incluida en cualquier entorno con npm.
+
+Es rápida, no requiere configuración extra.
+
+Ideal para detectar problemas en paquetes de terceros (muy común en proyectos Node.js como el tuyo).
+
+¿Cómo se usa?
+
+Desde la carpeta app/, ejecutas:
+
+bash
+Copiar
+Editar
+npm audit --json > ../seguridad/auditorias/npm-audit.json
+Esto genera un informe en formato JSON para tu repositorio, que ya está incluido.
+
+Modificación realizada:
+
+Se ha instalado manualmente la versión lodash@4.17.15 que presenta vulnerabilidades conocidas. Esto se ha hecho con fines didácticos para validar la eficacia de la herramienta npm audit en la detección de dependencias inseguras.
+
+Efecto deseado:
+
+Al ejecutar npm audit, se genera una alerta de seguridad relacionada con esa versión vulnerable, lo cual sirve para demostrar el funcionamiento de esta herramienta de análisis.
